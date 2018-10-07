@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" lang="en">
+
+
+		<!--Import Google Icon Font-->
+		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<!--Import materialize.css-->
+		<link type="text/css" rel="stylesheet" href="css/materialize.min.css"
+		media="screen,projection"/>
+		<!--Let browser know website is optimized for mobile-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+		<!-- iconos redes sociales-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<!--Estilos-->
+		<link rel="stylesheet" type="text/css" href="css/estilos.css">
+
+
+		<title>Mis Perris</title>
+	</head>
+
+	<body>
+
+
+		<div class="wrapper cyan darken-2">
+
+			<!-- MENU-->
+			<nav class="cyan darken-1">
+			    <div class="row nav-wrapper">
+			      <a href="index.html" class="brand-logo"><img src="img/logo.png" alt="Logo Mis Perris" class="responsive-img"></a>
+			      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+			      <ul class="right hide-on-med-and-down"><!--hide-on-small-only hide-on-med-and-down-->
+			        <li><a href="index.html">Inicio</a></li>
+			        <li><a href="#">Quienes somos</a></li>
+			        <li><a href="#">Servicios</a></li>
+			        <li><a href="adopta.html">Adopta</a></li>
+			        <li><a href="#">Contáctanos</a></li>
+			      </ul>
+			    </div>
+		  	</nav>
+
+		  	<ul class="sidenav" id="mobile-demo">
+			    <li><a href="index.html">Inicio</a></li>
+			    <li><a href="#">Quienes somos</a></li>
+			    <li><a href="#">Servicios</a></li>
+			    <li><a href="adopta.html">Adopta</a></li>
+			    <li><a href="#">Contáctanos</a></li>
+			</ul>
+
+			<!-- FIN MENU-->
+
+			<!-- CONTENIDO-->
+			<div class="content">
+				<!-- MAIN-->
+				<section class="main cyan darken-2">
+					<!--SLIDER-->
+					<div class="row">
+					  <div class="slider col s12 l6 offset-l3">
+					    <ul class="slides">
+					      <li>
+					        <img src="img/adoptados/Apolo.jpg"> <!-- random image -->
+					        <div class="caption center-align">
+					          <h3>Apolo</h3>
+					          <h5 class="light grey-text text-lighten-3">"le encanta viajar y estar acompañado"</h5>
+					        </div>
+					      </li>
+					      <li>
+					        <img src="img/adoptados/Duque.jpg"> <!-- random image -->
+					        <div class="caption center-align">
+					          <h3>Duque</h3>
+					          <h5 class="light grey-text text-lighten-3">"Me gané un compañero de aventuras" </h5>
+					        </div>
+					      </li>
+					      <li>
+					        <img src="img/adoptados/Tom.jpg"> <!-- random image -->
+					        <div class="caption center-align">
+					          <h3>Tom</h3>
+					          <h5 class="light grey-text text-lighten-3">"El mejor amigo de mis hijos"</h5>
+					        </div>
+					      </li>
+					    </ul>
+					  </div>
+						
+					</div>
+					<!--FIN SLIDER-->
+					<!--FOOTER MAIN-->
+
+					<footer class="row main-footer white-text ">
+									
+				        <address class="col s12 l4 center-align">
+							<i class="small material-icons">phone</i><p>+569 98765431</p>
+						</address> <!-- fin address-->
+
+						<section class="slogan col s12 l4 center-align">
+							<p>Rescate y adopción de perros callejeros </p>
+						</section><!-- fin slogan-->
+
+						<section class="social col s12 l4 center-align">
+							<a href="" class="hoverable "><i class="fa fa-facebook" aria-hidden="true"></i></a>
+						    <a href="" class="hoverable "><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+						    <a href="" class="hoverable "><i class="fa fa-instagram" aria-hidden="true"></i></a>
+						    <a href="" class="hoverable "><i class="fa fa-envelope" aria-hidden="true"></i></a>
+						</section> <!-- fin .social-->
+		
+					</footer><!-- FIN FOOTER MAIN-->
+					
+
+				</section><!-- FIN MAIN-->
+
+				<!-- div Formulario + titulo-->
+					<div class="white">
+					<div class="row center-align">
+						<h2>Adopta un Perri</h2>
+						<p class="subtitulo">Si quieres adoptar, por favor completa el siguiente formulario</p>
+						<hr>
+					</div>
+
+								<section class="row">
+								    <form id="form-adopcion"class="col s12" method="post" action="#">
+
+								      <div class="row">
+								        <div class="input-field col s12 m10 l8 xl6 offset-m1 offset-l2 offset-xl3">
+								        	<i class="material-icons prefix">account_circle</i>
+								          <input id="name" type="text" class="validate" id="name" minlength="5" placeholder="Nombre Apellido"required>
+								          <label for="name">Nombre Completo</label>
+								        </div>
+								      </div>
+
+
+								      <div class="row">
+								        <div class="input-field col s12 m5 l4 xl3 offset-m1 offset-l2 offset-xl3">
+								        	<i class="material-icons prefix">credit_card</i>
+								          <input id="rut" type="text" class="validate" name="rut" required oninput="checkRut(this)" placeholder="12345678-9" maxlength="10">
+								          <label for="rut">Rut</label>
+								        </div>
+
+								        <div class="input-field col s12 m5 l4 xl3 ">
+								        	<i class="material-icons prefix">calendar_today</i>
+								          <input id="datepicker" type="text" class="datepicker validate tooltipped" name="rut" required="required" placeholder="Clic para selecionar fecha" data-position="bottom" data-tooltip="Debes ser mayor de edad para poder adoptar un perri">
+								          <label for="datepicker">Fecha de nacimiento</label>
+								        </div>
+								      </div>
+
+
+								      <div class="row">
+								        <div class="input-field col s12 m5 l4 xl3 offset-m1 offset-l2 offset-xl3">
+								        	<i class="material-icons prefix">email</i>
+								          <input id="email" type="email" class="validate"  name="email" placeholder="nombre@dominio.com"required>
+								          <label for="email">Email</label>
+								        </div>
+
+								        <div class="input-field col s12 m5 l4 xl3">
+								        	<i class="material-icons prefix">phone</i>
+								          <input id="telefono" type="number" class="validate" name="telefono" step="1" placeholder="9 dígitos. Ejemplo: 912345678" min="900000000" max="999999999">
+								          <label for="telefono">Teléfono</label>
+								        </div>
+								      </div>
+
+									<div class="row">
+									  <div class="input-field col s12 m5 l4 xl3 offset-m1 offset-l2 offset-xl3">
+									  	<i class="material-icons prefix">location_on</i>
+									    <select id="region" name="region" class="validate" required>
+									      <option value="" disabled selected>Seleccione</option>
+									      <option value=" XV Arica y Parinacota " >XV Arica y Parinacota</option>
+										  <option value=" I Tarapacá " >I Tarapacá</option>
+										  <option value=" II Antofagasta " >II Antofagasta</option>
+										  <option value=" III Atacama " >III Atacama</option>
+										  <option value=" IV Coquimbo " >IV Coquimbo</option>
+										  <option value=" V Valparaíso " >V Valparaíso</option>
+										  <option value=" VI O'Higgins " >VI O'Higgins</option>
+										  <option value=" VII Maule " >VII Maule</option>
+										  <option value=" VIII Biobío " >VIII Biobío</option>
+										  <option value=" IX La Araucanía " >IX La Araucanía</option>
+										  <option value=" XIV Los Ríos " >XIV Los Ríos</option>
+										  <option value=" X Los Lagos " >X Los Lagos</option>
+										  <option value=" XI Aysén " >XI Aysén</option>
+										  <option value=" XII Magallanes y Antártica " >XII Magallanes y Antártica</option>
+									    </select>
+									    <label>Región</label>
+									  </div>
+
+									  <div class="input-field col s12 m5 l4 xl3">
+									  	<i class="material-icons prefix">location_on</i>
+									    <select id="comuna" name="comuna" class="validate" required >
+									      <option value="" disabled selected>Seleccione</option>
+									      <option value="1"> Arica</option>
+									      <option value="2"> Antofagasta</option>
+									      <option value="3"> Valparaíso</option>
+									      <option value="4"> Santiago</option>
+									      <option value="5"> Rancagua</option>
+									      <option value="6"> Talca</option>
+									      <option value="7"> Chillan</option>
+									    </select>
+									    <label>Ciudad</label>
+									  </div>
+									</div>
+
+									<div class="row">
+									  <div class="input-field col s12 m5 l4 xl3 offset-m1 offset-l2 offset-xl3">
+									  	<i class="material-icons prefix">home</i>
+									    <select id="vivienda" name="vivienda" class="validate" required>
+									      <option value="" disabled selected>Seleccione</option>
+									      <option value="1">Casa con patio grande</option>
+									      <option value="2">Casa con patio pequeño</option>
+									      <option value="3">Casa sin patio</option>
+									      <option value="4">Departamento</option>
+									    </select>
+									    <label>Tipo de Vivienda</label>
+									  </div>
+									</div>
+									
+									<div class="row">
+								        <div class="input-field col offset-l3">
+  											<button class="btn waves-effect waves-light" type="submit" name="submit" id="submit">Enviar
+    											<i class="material-icons right">send</i>
+  											</button>
+								        </div>
+								      </div>
+
+								    </form>
+								  </section> <!-- Fin section formulario-->
+
+
+</div> <!--fin div formulario+titulo -->
+				</div><!-- FIN CONTENIDO-->
+					
+					<!-- Inicio footer-->
+					<footer class="page-footer cyan darken-1">
+			          <div class="container">
+			            <div class="row">
+			              <div class="col l6 s12">
+			                <h5 class="white-text">Desarrollo Web y Mobile</h5>
+			              </div>
+			            </div>
+			          </div>
+			          <div class="footer-copyright">
+			            <div class="container">
+			            <p>2018</p>
+			            </div>
+			          </div>
+			        </footer> <!--fin footer-->
+
+	
+				
+	</div> <!-- fin .wrapper-->
+
+<!------------------------------------ SCRIPTS------------------------------------------------------------>
+		<!--Import jQuery before materialize.js-->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="js/materialize.min.js"></script>
+
+
+		<script type="text/javascript">
+			$(document).ready(function(){
+    		$('.sidenav').sidenav();
+  			});
+		</script>
+
+		<script type="text/javascript">
+			$(document).ready(function(){
+    		$('.slider').slider();
+  			});
+		</script>
+
+		<script type="text/javascript">
+			$(document).ready(function(){
+		    $('.materialbox').materialbox();
+		  });
+		</script>
+
+
+<script>
+var date = new Date();
+var year = date.getFullYear();
+var month = date.getMonth();
+var day = date.getDate();
+var date = new Date(year - 18, month, day); //para que la edad elegida sea igual a 18 años
+
+
+  $(document).ready(function(){
+    $('.datepicker').datepicker({
+    	format: 'dd mmmm, yyyy',
+    	showClearBtn: true,
+    	firstDay:1, //semana comienza el día lunes
+    	maxDate:date, //se toma como fecha de nacimiento mayor la de 18 años
+    	defaultDate: date, //se toma como fecha de nacimiento mayor la de 18 años
+    	i18n: {
+		      cancel: 'Cancelar',
+		      clear: 'Limpiar',
+		      done: 'Ok',
+		      previousMonth: '‹',
+		      nextMonth: '›',
+		      months: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
+		      monthsShort: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dec'],
+		      weekdays: ['Domingo', 'Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado'],
+		      weekdaysShort: ['Dom', 'Lun', 'Mar', 'Mie', 'Jue', 'Vie', 'Sab'],
+		      weekdaysAbbrev: ['D', 'L', 'M', 'W', 'J', 'V', 'S']
+    		}
+    });
+  });
+          
+</script> 
+
+<script type="text/javascript">
+
+  $(document).ready(function(){
+    $('select').formSelect();
+  });
+</script>
+
+
+<!----Valida RUT---->
+<script type="text/javascript">
+function checkRut(rut) {
+    // Despejar Puntos
+    var valor = rut.value.replace('.','');
+    // Despejar Guión
+    valor = valor.replace('-','');
+    
+    // Aislar Cuerpo y Dígito Verificador
+    cuerpo = valor.slice(0,-1);
+    dv = valor.slice(-1).toUpperCase();
+    
+    // Formatear RUN
+    rut.value = cuerpo + '-'+ dv
+    
+    // Si no cumple con el mínimo ej. (n.nnn.nnn)
+    if(cuerpo.length < 7) { rut.setCustomValidity("RUT Incompleto"); return false;}
+    
+    // Calcular Dígito Verificador
+    suma = 0;
+    multiplo = 2;
+    
+    // Para cada dígito del Cuerpo
+    for(i=1;i<=cuerpo.length;i++) {
+    
+        // Obtener su Producto con el Múltiplo Correspondiente
+        index = multiplo * valor.charAt(cuerpo.length - i);
+        
+        // Sumar al Contador General
+        suma = suma + index;
+        
+        // Consolidar Múltiplo dentro del rango [2,7]
+        if(multiplo < 7) { multiplo = multiplo + 1; } else { multiplo = 2; }
+  
+    }
+    
+    // Calcular Dígito Verificador en base al Módulo 11
+    dvEsperado = 11 - (suma % 11);
+    
+    // Casos Especiales (0 y K)
+    dv = (dv == 'K')?10:dv;
+    dv = (dv == 0)?11:dv;
+    
+    // Validar que el Cuerpo coincide con su Dígito Verificador
+    if(dvEsperado != dv) { rut.setCustomValidity("RUT Inválido"); return false; }
+    
+    // Si todo sale bien, eliminar errores (decretar que es válido)
+    rut.setCustomValidity('');
+}
+
+</script>
+
+
+<script type="text/javascript">
+	$(document).ready(function(){
+    $('.tooltipped').tooltip();
+  });
+</script>
+
+
+	</body>
+</html>
